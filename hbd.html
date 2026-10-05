@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Reenu 🐼❤️</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;
+  background:linear-gradient(135deg,#fff7f2,#ffeef5,#f4efff);
+  color:#352b35;overflow-x:hidden;
+}
+body:before{content:"🐼  ♥  ✨  🐼  🌸  ♥";position:fixed;inset:0;pointer-events:none;
+  opacity:.08;font-size:42px;line-height:2.1;word-spacing:25px;transform:rotate(-12deg);z-index:0}
+section{min-height:100vh;padding:70px 20px;display:flex;align-items:center;justify-content:center;position:relative;z-index:1}
+.card{width:min(900px,100%);background:rgba(255,255,255,.78);backdrop-filter:blur(14px);
+  border:1px solid rgba(255,255,255,.9);border-radius:30px;padding:30px;box-shadow:0 20px 60px rgba(85,50,80,.15)}
+.hero{text-align:center}
+.panda{font-size:100px;animation:bounce 2s infinite}
+@keyframes bounce{50%{transform:translateY(-10px) rotate(3deg)}}
+h1{font-size:clamp(42px,10vw,78px);margin:8px 0;background:linear-gradient(90deg,#3b2934,#c85b83);
+-webkit-background-clip:text;color:transparent}
+h2{font-size:clamp(28px,6vw,48px);margin:8px 0 20px}
+.subtitle{font-size:18px;opacity:.8}
+button{border:0;border-radius:999px;padding:14px 22px;font-weight:700;cursor:pointer;font-size:16px;
+background:#352b35;color:#fff;box-shadow:0 8px 20px rgba(53,43,53,.2)}
+button:hover{transform:translateY(-2px)}
+.music{position:fixed;right:16px;top:16px;z-index:10;background:#fff;color:#352b35}
+.envelope{margin:35px auto;width:min(500px,90vw);height:300px;position:relative;cursor:pointer}
+.env-body{position:absolute;inset:30px 0 0;background:#f7d8e4;border-radius:14px;box-shadow:0 15px 35px #b68a9b55}
+.flap{position:absolute;left:0;right:0;top:30px;margin:auto;width:0;height:0;border-left:250px solid transparent;
+border-right:250px solid transparent;border-top:145px solid #efb7cb;transform-origin:top;transition:.8s;z-index:3}
+.envelope.open .flap{transform:rotateX(180deg);z-index:1}
+.letter{position:absolute;left:7%;width:86%;height:225px;bottom:8px;background:#fffdf8;border-radius:10px;
+padding:24px;z-index:2;transition:.8s;box-shadow:0 5px 18px #76505a22}
+.envelope.open .letter{transform:translateY(-125px)}
+.hint{text-align:center;margin-top:15px;font-weight:700}
+.message{font-size:18px;line-height:1.75}
+.highlight{font-size:24px;font-weight:800;color:#b94f79}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+.photo{aspect-ratio:1;border-radius:22px;background:#f4dce6;display:flex;align-items:center;justify-content:center;
+overflow:hidden;border:3px dashed #d99ab5;color:#86566a;font-weight:700;text-align:center}
+.photo img{width:100%;height:100%;object-fit:cover}
+input[type=file]{display:none}
+label.upload{display:inline-block;margin:5px 0;padding:10px 15px;border-radius:999px;background:#fff;border:1px solid #e6cbd6;cursor:pointer}
+.reasons{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+.reason{padding:20px;border-radius:22px;background:#fff8fb;border:1px solid #f0d8e2}
+.big{font-size:32px}
+.footer{text-align:center;padding:50px 20px 80px;font-weight:600}
+small{opacity:.65}
+#secret{display:none}
+</style>
+</head>
+<body>
+
+<button class="music" id="musicBtn" onclick="toggleMusic()">🎵 Play our song</button>
+
+<section>
+<div class="card hero">
+  <div class="panda">🐼</div>
+  <div class="subtitle">A tiny little internet-made surprise from</div>
+  <h1>Sumu → Reenu</h1>
+  <h2>Happy Birthday, Reenu! 🎂❤️</h2>
+  <p class="subtitle">Warning: opening this letter may cause smiling, blushing and excessive panda cuteness. 🐼</p>
+  <div class="envelope" id="env" onclick="openLetter()">
+    <div class="env-body"></div>
+    <div class="letter">
+      <div class="highlight">To my favourite human, Reenu 🫀</div>
+      <p>There are people we meet every day… and then there are people who somehow become special from behind a screen. You are one of those people.</p>
+    </div>
+    <div class="flap"></div>
+  </div>
+  <div class="hint">💌 Tap the envelope to open</div>
+</div>
+</section>
+
+<section>
+<div class="card">
+  <h2>Okay… now the real birthday letter 🫀</h2>
+  <div class="message">
+  <p>Dear Reenu,</p>
+  <p>Happy Birthday to the girl who somehow managed to become an important part of my little world. ❤️</p>
+  <p>I don't know exactly how an online friendship can become this meaningful, but I'm genuinely grateful that I met you.</p>
+  <p>You deserve a year full of peaceful days, stupidly happy moments, good people, big dreams coming true—and obviously a ridiculous amount of cake. 🎂</p>
+  <p>And yes, I hope you keep being your cute, annoying, funny self… because apparently I've gotten used to it now. 😭😂</p>
+  <p>Whatever happens in the future, I hope you always remember that somewhere out there is a Sumu who genuinely wishes the best for you.</p>
+  <p class="highlight">Stay happy. Stay weird. Stay Reenu. 🐼❤️</p>
+  <p>— With lots of warmth,<br><b>Sumu 🫀</b></p>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="card">
+  <h2>Our little memory wall 📸</h2>
+  <p>Choose your photos below. They stay in your browser and are not uploaded anywhere by this page.</p>
+  <div class="gallery">
+    <div><label class="upload" for="p1">📷 Add photo 1</label><input id="p1" type="file" accept="image/*" onchange="showPhoto(this,'i1')"><div class="photo" id="i1">Panda memory 🐼</div></div>
+    <div><label class="upload" for="p2">📷 Add photo 2</label><input id="p2" type="file" accept="image/*" onchange="showPhoto(this,'i2')"><div class="photo" id="i2">Cute moment 💗</div></div>
+    <div><label class="upload" for="p3">📷 Add photo 3</label><input id="p3" type="file" accept="image/*" onchange="showPhoto(this,'i3')"><div class="photo" id="i3">Chaos 😂</div></div>
+    <div><label class="upload" for="p4">📷 Add photo 4</label><input id="p4" type="file" accept="image/*" onchange="showPhoto(this,'i4')"><div class="photo" id="i4">One more memory ✨</div></div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="card">
+  <h2>Reasons Reenu is Reenu 🐼</h2>
+  <div class="reasons">
+    <div class="reason"><div class="big">🫀</div><b>She matters.</b><br>Simple. No explanation required.</div>
+    <div class="reason"><div class="big">😂</div><b>She causes chaos.</b><br>And somehow gets away with it.</div>
+    <div class="reason"><div class="big">🌸</div><b>She makes moments special.</b><br>Even ordinary conversations.</div>
+    <div class="reason"><div class="big">🐼</div><b>Maximum panda energy.</b><br>Officially certified by Sumu.</div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="card hero">
+  <div class="panda">🐼🎂</div>
+  <h2>One last thing…</h2>
+  <p class="message">I hope when you look back at this someday, you smile and think:</p>
+  <p class="highlight">“Okay… Sumu was actually kinda cute for making this.” 😭❤️</p>
+  <p>Happy Birthday, Reenu. Keep shining. ✨</p>
+  <button onclick="document.getElementById('secret').style.display='block'">🎁 Open tiny secret</button>
+  <p id="secret" class="highlight">P.S. You owe me birthday cake. No negotiations. 🐼😂🎂</p>
+</div>
+</section>
+
+<div class="footer">Made with 🫀 + 🐼 + a little bit of madness by Sumu<br><small>Happy Birthday, Reenu ❤️</small></div>
+
+<audio id="song" loop>
+  <!-- Replace song.mp3 with your chosen music file in this folder -->
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function openLetter(){document.getElementById('env').classList.toggle('open')}
+function showPhoto(input,id){
+  if(input.files && input.files[0]){
+    const reader=new FileReader();
+    reader.onload=e=>{
+      document.getElementById(id).innerHTML='<img src="'+e.target.result+'" alt="Memory">';
+    };
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+function toggleMusic(){
+  const a=document.getElementById('song'), b=document.getElementById('musicBtn');
+  if(a.paused){a.play().then(()=>b.textContent='⏸️ Pause music').catch(()=>alert('Add song.mp3 to this folder first.'))}
+  else{a.pause();b.textContent='🎵 Play our song'}
+}
+</script>
+</body>
+</html>
